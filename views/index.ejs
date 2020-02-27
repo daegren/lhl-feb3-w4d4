@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W4D4 Demo</title>
+
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <h1>Murrays</h1>
+
+    <div class="wrapper">
+      <% data.forEach(item => { %>
+      <article class="murray">
+        <h2><%= item.name %></h2>
+        <img src="<%= item.url %>" alt="<%= item.name %>" />
+      </article>
+      <% }) %>
+    </div>
+  </body>
+</html>

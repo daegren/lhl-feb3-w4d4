@@ -1,0 +1,11 @@
+@mixin breakpoint-tablet() {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-desktop() {
+  @media screen and (min-width: 900px) {
+    @content;
+  }
+}

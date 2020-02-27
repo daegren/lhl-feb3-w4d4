@@ -1,0 +1,36 @@
+@import "_reset";
+@import "_mixins";
+
+.wrapper {
+  article.murray {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+
+    h2 {
+      flex: 0;
+
+      @include breakpoint-tablet() {
+        font-size: 2em;
+      }
+    }
+
+    img {
+      flex: 1;
+    }
+  }
+
+  @include breakpoint-tablet() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+  }
+
+  @include breakpoint-desktop() {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
